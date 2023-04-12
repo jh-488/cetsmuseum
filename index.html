@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETSMUSEUM</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img id="logo" src="img/cets_logo.png" alt="cets_logo">
+        <h1 id="head">CETSMUSEUM</h1>
+    </header>
+
+    <div class="container">
+        <div class="search_container">
+            <div class="upgrade_section">
+                <p>Upgraded?</p>
+                <div class="rectangle">
+                    <div id="yes" class="option">Yes</div>
+                    <div id="no" class="option">No</div>
+                </div>
+            </div>
+            <div class="error">
+                <p id="error_message"></p>
+            </div>
+            <div id="cet_id" class="search_bar">
+                <input type="text" placeholder="Gib Cet Address" id="cet_address">
+                <button id="search-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i></button> 
+                <div id="loading-icon">
+                </div> 
+            </div> 
+            <div class="how-to">
+                <p id="question">How to get cet address?</p>
+                <p id="answer">DYOR <span><img id="kekw" src="img/kekw.jpg"></span></p>
+            </div>            
+        </div>
+
+        <div class="images">
+            <div class="image_container">
+                <p>E1</p>
+                <img id="E1" src="img/unknown_cet.png">
+            </div>
+            <div class="image_container">
+                <p>OG</p>
+                <img id="OG" src="img/unknown_cet.png">
+            </div>
+            <div class="image_container">
+                <p>E2</p>
+                <img id="E2" src="img/unknown_cet.png">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Not affiliated with <a href="https://cets.wtf/" target="_blank">CETS</a>.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

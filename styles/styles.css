@@ -1,0 +1,219 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'Shadows Into Light';
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header img{
+    height: 80px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header h1{
+    color: white;
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight:300;
+    cursor: pointer;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.upgrade_section{
+    position:absolute;
+    top: 70px;
+    right: 300px;
+}
+
+.upgrade_section p{
+    font-weight: bolder;
+    font-size: 40px;
+    color:azure;
+}
+
+.rectangle{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(148, 140, 140);
+    border-radius: 5px;
+}
+
+.option{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+}
+
+#yes, #no {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.green {
+    background-color: green;
+}
+  
+  .red {
+    background-color: red;
+}
+
+.search_container{
+    justify-content: center;
+    align-items: center;
+    padding-right: 800px;
+}
+
+.search_bar{
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    background-color:rgb(196, 186, 186);
+    display:flex;
+    align-items:center;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.search_bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 25px;
+    color:black;
+}
+
+::placeholder{
+    color: black;
+}
+
+.search_bar button{
+    border: 1;
+    border-radius: 5%;
+    width: 60px;
+    height: 40px;
+    background:rgb(184, 175, 175);
+    cursor: pointer;
+}
+
+#error_message{
+    position: fixed;
+    top: 9%;
+    font-weight: 500;
+    color: red;
+    display: flex;
+    font-size: 25px;
+}
+
+#loading-icon{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #0c1216;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.how-to{
+    position: relative;
+}
+
+#question{
+    color: azure;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: help;
+}
+
+#answer{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: 5px;
+    display: none;
+    color: azure;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#kekw{
+    width: 50px;
+    height: 50px;
+}
+
+.images{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.images img{
+    width: 100%;
+    height: auto;
+}
+
+.image_container p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color:azure;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    color: azure;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color: azure;
+  }
