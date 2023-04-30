@@ -205,7 +205,7 @@ header h1{
 }
 
 .copyright{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     margin-left: 10px;
@@ -217,3 +217,65 @@ header h1{
 a:link, a:visited {
     color: azure;
   }
+
+@media screen and (max-width: 1000px){
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .header h1{
+        font-size: 40px;
+    }
+
+    .search_container{
+        margin: auto;
+        padding-left: 20px;
+    }
+
+    .upgrade_section{
+        margin-top: 150px;
+        left: 100px;
+    }
+
+    .search_bar{
+        width: 100%;
+        max-width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .rectangle{
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .upgrade_section p{
+        font-size: 30px;
+    }
+
+    #kekw{
+        width: 35px;
+        height: 35px;
+    }
+
+    .images{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img{
+        width: 100%;
+        max-width: 500px;
+        margin: 5px;
+    }
+
+    .image_container p{
+        font-size: 40px;
+    }
+}  
