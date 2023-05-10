@@ -17,7 +17,6 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 header img{
@@ -39,7 +38,7 @@ header h1{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .upgrade_section{
@@ -97,6 +96,7 @@ header h1{
 }
 
 .search_bar{
+    position: relative;
     width: 100%;
     max-width: 500px;
     height: 40px;
@@ -131,8 +131,8 @@ header h1{
 }
 
 #error_message{
-    position: relative;
-    top: 9%;
+    position: absolute;
+    top: 80px;
     font-weight: 500;
     color: red;
     display: flex;
