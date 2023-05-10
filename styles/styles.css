@@ -131,7 +131,7 @@ header h1{
 }
 
 #error_message{
-    position: fixed;
+    position: relative;
     top: 9%;
     font-weight: 500;
     color: red;
@@ -235,7 +235,7 @@ a:link, a:visited {
     }
 
     .upgrade_section{
-        margin-top: 150px;
+        margin-top: 200px;
         left: 100px;
     }
 
