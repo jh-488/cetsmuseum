@@ -185,7 +185,7 @@ header h1{
 }
 
 .images{
-    margin-top: 25px;
+    margin-top: 8px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
