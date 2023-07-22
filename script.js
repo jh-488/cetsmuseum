@@ -8,7 +8,7 @@ function CetsData(TokenAddress) {
         method: 'Get',
         headers: {
             'Accept': 'application/json',
-            'token' : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE2NzkyMzU3NTA1MTcsImVtYWlsIjoiamloYWRyY2FAZ21haWwuY29tIiwiYWN0aW9uIjoidG9rZW4tYXBpIiwiaWF0IjoxNjc5MjM1NzUwfQ.0aCdVk7v7kYOuoFD0Tfos0mFDTrWsxhxV5GmnIWDdvY'
+            'token' : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE2OTAwNTE0NjUzMDksImVtYWlsIjoiamloYWRoeWFkaTAxQGdtYWlsLmNvbSIsImFjdGlvbiI6InRva2VuLWFwaSIsImlhdCI6MTY5MDA1MTQ2NX0.MGmBWnL0k87qJTKngBIHf9Vn-dzUyWCOdn84GImjUXg'
             }
         })
         .then(response => response.json())
@@ -24,7 +24,7 @@ function CetsData(TokenAddress) {
                 // change the rectangle color to red = Cet not upgraded
                 upgraded.classList.remove("green");
                 notupgraded.classList.add("red");
-                return false;
+                return true;
             }
         })
         .catch(error => {
@@ -52,9 +52,9 @@ function GetCets(){
     });
 
     // Get the versions of the cet from server
-    const E1_version = "https://shdw-drive.genesysgo.net/4ALHMRBZKTApHeCGfMoxPxt1hzg47veMeoarELHkj4TS/" + encodeURIComponent(mintaddress) + "+e1.png";
-    const OG_version = "https://shdw-drive.genesysgo.net/4ALHMRBZKTApHeCGfMoxPxt1hzg47veMeoarELHkj4TS/" + encodeURIComponent(mintaddress) + ".png";
-    const E2_version = "https://shdw-drive.genesysgo.net/4ALHMRBZKTApHeCGfMoxPxt1hzg47veMeoarELHkj4TS/" + encodeURIComponent(mintaddress) + "+e2.png";
+    const E1_version = "https://shdw-drive.genesysgo.net/3tPEmShThSrDVM364dUJPLjKCQMGScdPEP3XxgWgN2Xo/" + encodeURIComponent(mintaddress) + "+e1.png";
+    const OG_version = "https://shdw-drive.genesysgo.net/3tPEmShThSrDVM364dUJPLjKCQMGScdPEP3XxgWgN2Xo/" + encodeURIComponent(mintaddress) + ".png";
+    const E2_version = "https://shdw-drive.genesysgo.net/3tPEmShThSrDVM364dUJPLjKCQMGScdPEP3XxgWgN2Xo/" + encodeURIComponent(mintaddress) + "+e2.png";
 
     // Create new XMLHttpRequest object
     var xhr = new XMLHttpRequest();
